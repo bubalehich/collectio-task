@@ -9,7 +9,6 @@ import by.clevertec.model.Person;
 import by.clevertec.model.Student;
 import by.clevertec.util.Util;
 
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Collection;
@@ -35,29 +34,29 @@ public class Main {
     private static final String RANDOM_GROUP = "C-4";
     private static final int FIVE_YEARS_IN_DAYS = 365 * 5;
 
-    public static void main(String[] args) throws IOException {
-//        task1();
-//        task2();
-//        task3();
-//        task4();
-//        task5();
-//        task6();
-//        task7();
-//        task8();
-//        task9();
-//        task10();
-//        task11();
-//        task12();
-//        task13();
-//        task14();
-//        task15();
-//        task16();
-//        task17();
-//        task18();
-//        task19();
+    public static void main(String[] args) {
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+        task8();
+        task9();
+        task10();
+        task11();
+        task12();
+        task13();
+        task14();
+        task15();
+        task16();
+        task17();
+        task18();
+        task19();
         task20();
-//        task21();
-//        task22();
+        task21();
+        task22();
     }
 
     private static void task1() {
@@ -289,7 +288,7 @@ public class Main {
         System.out.printf("Total sum = %f", totalSum);
     }
 
-    private static void task15() throws IOException {
+    private static void task15() {
         List<Flower> flowers = Util.getFlowers();
 
         System.out.println(
@@ -362,7 +361,8 @@ public class Main {
 
         System.out.println(
                 students.stream()
-                        .collect(Collectors.groupingBy(Student::getGroup, Collectors.counting())));
+                        .collect(Collectors.groupingBy(Student::getGroup, Collectors.counting()))
+        );
     }
 
     public static void task22() {
@@ -370,6 +370,7 @@ public class Main {
 
         System.out.println(
                 students.stream()
-                        .collect(Collectors.groupingBy(Student::getGroup, Collectors.minBy(Comparator.comparing(Student::getAge)))));
+                        .collect(Collectors.groupingBy(Student::getGroup, Collectors.minBy(Comparator.comparing(Student::getAge))))
+        );
     }
 }
