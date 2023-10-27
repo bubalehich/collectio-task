@@ -59,7 +59,7 @@ public class Main {
         task22();
     }
 
-    private static void task1() {
+    public static void task1() {
         List<Animal> animals = Util.getAnimals();
 
         AtomicInteger index = new AtomicInteger(0);
@@ -71,7 +71,7 @@ public class Main {
                 .forEach(System.out::println);
     }
 
-    private static void task2() {
+    public static void task2() {
         List<Animal> animals = Util.getAnimals();
 
         animals.stream()
@@ -82,7 +82,7 @@ public class Main {
                 .forEach(System.out::println);
     }
 
-    private static void task3() {
+    public static void task3() {
         List<Animal> animals = Util.getAnimals();
 
         animals.stream()
@@ -93,7 +93,7 @@ public class Main {
                 .forEach(System.out::println);
     }
 
-    private static void task4() {
+    public static void task4() {
         List<Animal> animals = Util.getAnimals();
 
         System.out.println(
@@ -103,7 +103,7 @@ public class Main {
         );
     }
 
-    private static void task5() {
+    public static void task5() {
         List<Animal> animals = Util.getAnimals();
 
         System.out.println(
@@ -115,7 +115,7 @@ public class Main {
         );
     }
 
-    private static void task6() {
+    public static void task6() {
         List<Animal> animals = Util.getAnimals();
 
         System.out.println(
@@ -126,7 +126,7 @@ public class Main {
         );
     }
 
-    private static void task7() {
+    public static void task7() {
         List<Animal> animals = Util.getAnimals();
 
         System.out.println(
@@ -137,7 +137,7 @@ public class Main {
         );
     }
 
-    private static void task8() {
+    public static void task8() {
         List<Animal> animals = Util.getAnimals();
 
         animals.stream()
@@ -148,7 +148,7 @@ public class Main {
                 .ifPresent(System.out::println);
     }
 
-    private static void task9() {
+    public static void task9() {
         List<Animal> animals = Util.getAnimals();
 
         /* With char array */
@@ -167,7 +167,7 @@ public class Main {
                 .ifPresent(System.out::println);
     }
 
-    private static void task10() {
+    public static void task10() {
         List<Animal> animals = Util.getAnimals();
 
         System.out.println(
@@ -177,7 +177,7 @@ public class Main {
         );
     }
 
-    private static void task11() {
+    public static void task11() {
         List<Animal> animals = Util.getAnimals();
 
         animals.stream()
@@ -187,7 +187,7 @@ public class Main {
                 .ifPresent(System.out::println);
     }
 
-    private static void task12() {
+    public static void task12() {
         List<Person> people = Util.getPersons();
 
         people.stream()
@@ -199,7 +199,7 @@ public class Main {
                 .forEach(System.out::println);
     }
 
-    private static void task13() {
+    public static void task13() {
         List<House> houses = Util.getHouses();
 
         houses.stream()
@@ -218,7 +218,7 @@ public class Main {
                 .forEach(System.out::println);
     }
 
-    private static void task14() {
+    public static void task14() {
         List<Car> cars = Util.getCars();
 
         var turkmenistanCars = cars.stream()
@@ -288,7 +288,7 @@ public class Main {
         System.out.printf("Total sum = %f", totalSum);
     }
 
-    private static void task15() {
+    public static void task15() {
         List<Flower> flowers = Util.getFlowers();
 
         System.out.println(
